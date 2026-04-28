@@ -1,38 +1,257 @@
-.App {
+/* App.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7fb;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: #111827;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #00d4ff;
+}
+
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(to right, #1f2937, #2563eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.shop-btn {
+  padding: 14px 30px;
+  font-size: 18px;
+  border: none;
+  background: #00d4ff;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-btn:hover {
+  background: white;
+}
+
+/* PRODUCTS SECTION */
+.products {
+  width: 100%;
+  padding: 60px 8%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.products h2 {
+  font-size: 40px;
+  color: #111827;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitle {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* PRODUCT CARD */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.image-container {
+  width: 100%;
+  height: 250px;
+  background: #f9fafb;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.category {
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #111827;
+}
+
+.price {
+  font-size: 24px;
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cart-btn,
+.buy-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.cart-btn {
+  background: #111827;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-btn:hover {
+  background: #2563eb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.buy-btn {
+  background: #00d4ff;
+  color: black;
+}
+
+.buy-btn:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* OFFER SECTION */
+.offer {
+  margin: 50px 8%;
+  background: linear-gradient(to right, #2563eb, #00d4ff);
+  color: white;
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.offer h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.offer p {
+  font-size: 20px;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .buttons {
+    flex-direction: column;
   }
 }
