@@ -1,15 +1,19 @@
 {
   "files": {
     "main.css": "/ecommerce-pwa/static/css/main.f855e6bc.css",
-    "main.js": "/ecommerce-pwa/static/js/main.146844bc.js",
+    "main.js": "/ecommerce-pwa/static/js/main.9d73ccb0.js",
     "static/js/453.89b5cfb6.chunk.js": "/ecommerce-pwa/static/js/453.89b5cfb6.chunk.js",
+    "static/media/headphones.jpg": "/ecommerce-pwa/static/media/headphones.d229c6ddc62efba165de.jpg",
+    "static/media/shoes.jpg": "/ecommerce-pwa/static/media/shoes.37f442f2df81518e8839.jpg",
+    "static/media/smartwatch.jpg": "/ecommerce-pwa/static/media/smartwatch.595b2ddcabb37b719ad4.jpg",
+    "static/media/backpack.jpg": "/ecommerce-pwa/static/media/backpack.6d4e7d1aefe6ddec6b8e.jpg",
     "index.html": "/ecommerce-pwa/index.html",
     "main.f855e6bc.css.map": "/ecommerce-pwa/static/css/main.f855e6bc.css.map",
-    "main.146844bc.js.map": "/ecommerce-pwa/static/js/main.146844bc.js.map",
+    "main.9d73ccb0.js.map": "/ecommerce-pwa/static/js/main.9d73ccb0.js.map",
     "453.89b5cfb6.chunk.js.map": "/ecommerce-pwa/static/js/453.89b5cfb6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.146844bc.js"
+    "static/js/main.9d73ccb0.js"
   ]
 }
