@@ -1,30 +1,39 @@
 import './App.css';
 
+import headphones from './assets/headphones.jpg';
+import smartwatch from './assets/smartwatch.jpg';
+import shoes from './assets/shoes.jpg';
+import backpack from './assets/backpack.jpg';
+
 function App() {
   const products = [
     {
       id: 1,
       name: "Wireless Headphones",
       price: "₹2,499",
-      image: "https://unsplash.com/photos/a-pair-of-headphones-sitting-on-top-of-each-other-A6hzRnwR3vM"
+      image: headphones,
+      category: "Electronics"
     },
     {
       id: 2,
       name: "Smart Watch",
       price: "₹3,999",
-      image: "https://via.placeholder.com/200"
+      image: smartwatch,
+      category: "Wearables"
     },
     {
       id: 3,
       name: "Running Shoes",
       price: "₹1,999",
-      image: "https://via.placeholder.com/200"
+      image: shoes,
+      category: "Fashion"
     },
     {
       id: 4,
       name: "Laptop Backpack",
       price: "₹1,299",
-      image: "https://via.placeholder.com/200"
+      image: backpack,
+      category: "Accessories"
     }
   ];
 
@@ -32,40 +41,60 @@ function App() {
     <div className="app">
       {/* Navbar */}
       <header className="navbar">
-        <h1>ShopEasy</h1>
+        <div className="logo">ShopEasy</div>
         <nav>
           <a href="/">Home</a>
           <a href="/">Products</a>
-          <a href="/">Cart</a>
+          <a href="/">Offers</a>
           <a href="/">Contact</a>
         </nav>
       </header>
 
       {/* Hero Section */}
       <section className="hero">
-        <h2>Welcome to ShopEasy</h2>
-        <p>Best Deals on Electronics, Fashion & More</p>
-        <button>Shop Now</button>
+        <div className="hero-content">
+          <h1>Discover Amazing Products</h1>
+          <p>Shop the latest gadgets, fashion, and accessories at unbeatable prices.</p>
+          <button className="shop-btn">Shop Now</button>
+        </div>
       </section>
 
-      {/* Products */}
+      {/* Featured Products */}
       <section className="products">
         <h2>Featured Products</h2>
+        <p className="subtitle">Top picks for you</p>
+
         <div className="product-grid">
           {products.map((product) => (
             <div className="card" key={product.id}>
-              <img src={product.image} alt={product.name} />
-              <h3>{product.name}</h3>
-              <p>{product.price}</p>
-              <button>Add to Cart</button>
+              <div className="image-container">
+                <img src={product.image} alt={product.name} />
+              </div>
+
+              <div className="card-content">
+                <span className="category">{product.category}</span>
+                <h3>{product.name}</h3>
+                <p className="price">{product.price}</p>
+
+                <div className="buttons">
+                  <button className="cart-btn">Add to Cart</button>
+                  <button className="buy-btn">Buy Now</button>
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
+      {/* Offer Banner */}
+      <section className="offer">
+        <h2>Special Offer</h2>
+        <p>Get up to 50% OFF on selected items!</p>
+      </section>
+
       {/* Footer */}
       <footer className="footer">
-        <p>© 2026 ShopEasy. All Rights Reserved.</p>
+        <p>© 2026 ShopEasy | Designed for Smart Shopping</p>
       </footer>
     </div>
   );
