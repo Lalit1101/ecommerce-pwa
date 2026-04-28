@@ -6,7 +6,7 @@ function App() {
       id: 1,
       name: "Wireless Headphones",
       price: "₹2,499",
-      image: "https://via.placeholder.com/200"
+      image: "https://unsplash.com/photos/a-pair-of-headphones-sitting-on-top-of-each-other-A6hzRnwR3vM"
     },
     {
       id: 2,
