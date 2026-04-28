@@ -1,6 +1,4 @@
-// src/App.js
-import React from "react";
-import "./App.css";
+import './App.css';
 
 function App() {
   const products = [
@@ -8,26 +6,26 @@ function App() {
       id: 1,
       name: "Wireless Headphones",
       price: "₹2,499",
-      image: "https://via.placeholder.com/200",
+      image: "https://via.placeholder.com/200"
     },
     {
       id: 2,
       name: "Smart Watch",
       price: "₹3,999",
-      image: "https://via.placeholder.com/200",
+      image: "https://via.placeholder.com/200"
     },
     {
       id: 3,
       name: "Running Shoes",
       price: "₹1,999",
-      image: "https://via.placeholder.com/200",
+      image: "https://via.placeholder.com/200"
     },
     {
       id: 4,
       name: "Laptop Backpack",
       price: "₹1,299",
-      image: "https://via.placeholder.com/200",
-    },
+      image: "https://via.placeholder.com/200"
+    }
   ];
 
   return (
@@ -50,7 +48,7 @@ function App() {
         <button>Shop Now</button>
       </section>
 
-      {/* Product Section */}
+      {/* Products */}
       <section className="products">
         <h2>Featured Products</h2>
         <div className="product-grid">
